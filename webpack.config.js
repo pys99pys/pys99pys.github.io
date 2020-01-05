@@ -24,7 +24,7 @@ module.exports = {
   entry: './src/index.tsx',
   output: {
     filename: 'app.js',
-    path: `${__dirname}/dist`,
+    path: `${__dirname}/build`,
     publicPath: '/',
   },
   resolve: {
@@ -61,7 +61,7 @@ module.exports = {
     devtool: 'source-map',
     devServer: {
       contentBase: './',
-      publicPath: '/dist',
+      publicPath: '/build',
     },
   }),
 };
