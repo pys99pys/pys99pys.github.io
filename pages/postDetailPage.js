@@ -14,7 +14,7 @@ const postDetailPage = async () => {
   return `
     <div class="content">
       <div class="post-detail-page">
-        <div class="header-wrap">
+        <div class="post-detail-page__header">
           <div class="labels">
             ${map(
               tags.split(","),
@@ -26,7 +26,7 @@ const postDetailPage = async () => {
           <h1>${subject}</h1>
           <time>${timeFormat(createdAt)}</time>
         </div>
-        <div class="content-wrap">${marked(content)}</div>
+        <div class="post-detail-page__content">${marked(content)}</div>
       </div>
     </div>
   `;

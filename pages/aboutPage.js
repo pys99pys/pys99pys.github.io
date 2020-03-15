@@ -2,7 +2,7 @@ const AboutPage = () => {
   return `
     <div class="content">
       <div class="about-page">
-        <div class="profile">
+        <div class="about-page__profile">
           <h1>프론트엔드 개발자 박윤서</h1>
           <small>Frontend Developer Park Youn Seo</small>
           <p>
@@ -11,7 +11,7 @@ const AboutPage = () => {
             최근에는 유지보수 하기 좋은 컴포넌트를 만드는 것과 성능 최적화에 많은 노력을 기울이고 있습니다.
           </p>
         </div>
-        <div class="skill">
+        <div class="about-page__skill">
           <h2>보유 기술</h2>
           <dl>
             <dt>Frontend</dt>
@@ -32,15 +32,15 @@ const AboutPage = () => {
             </dd>
           </dl>
         </div>
-        <div class="project">
+        <div class="about-page__project">
           <h2>진행했던 주요 프로젝트</h2>
           <section>
-            <div class="title">
+            <div class="about-page__project__title">
               <h3>샵 어드민 통합</h3>
               <span>카닥</span>
               <time>2020.1 ~ ing</time>
             </div>
-            <div class="items">
+            <div class="about-page__project__content">
               <p>
                 서비스별로 분리되어 있던 샵 어드민을 통합한 작업입니다. React v16.7에 도입된 hooks를 다양하게 커스텀하여 재사용성을 극대화 했습니다.
               </p>
@@ -58,12 +58,12 @@ const AboutPage = () => {
             </div>
           </section>
           <section>
-            <div class="title">
+            <div class="about-page__project__title">
               <h3>자동차검사 서비스</h3>
               <span>카닥</span>
               <time>2019.7 ~ 2019.10</time>
             </div>
-            <div class="items">
+            <div class="about-page__project__content">
               <p>
                 자동차검사 대행 서비스의 웹뷰 부분 프론트엔드 작업을 담당했습니다.
               </p>
@@ -75,12 +75,12 @@ const AboutPage = () => {
             </div>
           </section>
           <section>
-            <div class="title">
+            <div class="about-page__project__title">
               <h3>루나소프트 CTI</h3>
               <span>루나소프트</span>
               <time>2019.1 ~ 2019.4</time>
             </div>
-            <div class="items">
+            <div class="about-page__project__content">
               <p>
                 컴퓨터 전화 통합 시스템의 상담원 화면 프론트엔드 작업의 전체를 담당했습니다. Socket.io를 사용하여 실시간성 작업들을 처리했습니다.
               </p>
@@ -94,12 +94,12 @@ const AboutPage = () => {
             </div>
           </section>
           <section>
-            <div class="title">
+            <div class="about-page__project__title">
               <h3>루나소프트 상담톡</h3>
               <span>루나소프트</span>
               <time>2018.4 ~ 2018.10</time>
             </div>
-            <div class="items">
+            <div class="about-page__project__content">
               <p>
                 루나소프트 상담톡 서비스의 상담원 채팅 화면과 어드민 툴을 작업했습니다. Socket.io를 사용한 채팅 시스템 구현 등 프론트엔드 전체를 담당했으며, 일부 백엔드 작업에도 참여했습니다.
               </p>

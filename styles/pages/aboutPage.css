@@ -13,84 +13,84 @@
   font-weight: 800;
 }
 
-.about-page .profile small {
+.about-page__profile small {
   color: var(--color-gray3);
 }
 
-.about-page .profile p {
+.about-page__profile p {
   margin-top: 1rem;
 }
 
-.about-page .skill,
-.about-page .project {
+.about-page__skill,
+.about-page__project {
   margin-top: 3rem;
 }
 
-.about-page .skill dl {
+.about-page__skill dl {
   margin-top: 1.5rem;
   padding-left: 1rem;
   border-left: 5px solid var(--color-gray6);
 }
 
-.about-page .skill dl dt {
+.about-page__skill dl dt {
   font-weight: 600;
 }
 
-.about-page .skill dl dd {
+.about-page__skill dl dd {
   margin-top: 0.5rem;
   font-size: 0.875rem;
 }
 
-.about-page .project section {
+.about-page__project section {
   margin-top: 2.5rem;
   display: flex;
 }
 
-.about-page .project section .title {
+.about-page__project__title {
   width: 12.5rem;
 }
 
-.about-page .project section .title span {
+.about-page__project__title span {
   margin-top: 0.25rem;
   display: block;
   font-size: 0.85rem;
 }
 
-.about-page .project section .title time {
+.about-page__project__title time {
   font-size: 0.75rem;
   color: var(--color-gray3);
 }
 
-.about-page .project section .items {
+.about-page__project__content {
   flex: 1;
   padding-left: 1.5rem;
   border-left: 5px solid var(--color-gray6);
 }
 
-.about-page .project section .items ul {
+.about-page__project__content ul {
   margin-top: 1rem;
   padding-left: 1.5rem;
   list-style: disc;
 }
 
-.about-page .project section .items ul li {
+.about-page__project__content ul li {
   font-size: 0.85rem;
 }
 
 @media screen and (max-width: 768px) {
-  .about-page .skill dl dd {
+  .about-page__skill dl dd {
     font-size: 0.95rem;
   }
 
-  .about-page .project section {
+  .about-page__project section {
     flex-wrap: wrap;
   }
 
-  .about-page .project section .title {
+  .about-page__project__title {
     width: 100%;
   }
 
-  .about-page .project section .items {
+  .about-page__project__content {
     margin-top: 0.75rem;
     padding-top: 0.75rem;
     padding-left: 0;
@@ -98,7 +98,7 @@
     border-left: none;
   }
 
-  .about-page .project section .items ul li {
+  .about-page__project__content ul li {
     font-size: 0.95rem;
   }
 }
