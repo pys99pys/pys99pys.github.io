@@ -3,7 +3,7 @@
 }
 
 .post-page__aside {
-  width: 15.5rem;
+  width: 15rem;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -11,11 +11,10 @@
 
 .post-page__aside ul {
   width: 75%;
-  padding: 1rem 0;
 }
 
 .post-page__aside a {
-  padding: 0.25rem 1.5rem;
+  padding: 0.25rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -90,4 +89,33 @@
 
 .post-page__items article:hover h1 {
   color: var(--color-primary);
+}
+
+@media screen and (max-width: 768px) {
+  .post-page {
+    flex-direction: column;
+  }
+
+  .post-page__aside {
+    order: 1;
+    width: 100%;
+  }
+
+  .post-page__aside ul {
+    width: 100%;
+    display: flex;
+  }
+
+  .post-page__aside ul li {
+    margin-right: 1.25rem;
+  }
+
+  .post-page__aside ul li a span {
+    margin-left: 0.5rem;
+  }
+
+  .post-page__items {
+    order: 2;
+    margin-top: 1.5rem;
+  }
 }

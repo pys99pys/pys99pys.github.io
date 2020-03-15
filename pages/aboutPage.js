@@ -40,7 +40,7 @@ const AboutPage = () => {
               <span>카닥</span>
               <time>2020.1 ~ ing</time>
             </div>
-            <div class="item">
+            <div class="items">
               <p>
                 서비스별로 분리되어 있던 샵 어드민을 통합한 작업입니다. React v16.7에 도입된 hooks를 다양하게 커스텀하여 재사용성을 극대화 했습니다.
               </p>
@@ -63,7 +63,7 @@ const AboutPage = () => {
               <span>카닥</span>
               <time>2019.7 ~ 2019.10</time>
             </div>
-            <div class="item">
+            <div class="items">
               <p>
                 자동차검사 대행 서비스의 웹뷰 부분 프론트엔드 작업을 담당했습니다.
               </p>
@@ -80,7 +80,7 @@ const AboutPage = () => {
               <span>루나소프트</span>
               <time>2019.1 ~ 2019.4</time>
             </div>
-            <div class="item">
+            <div class="items">
               <p>
                 컴퓨터 전화 통합 시스템의 상담원 화면 프론트엔드 작업의 전체를 담당했습니다. Socket.io를 사용하여 실시간성 작업들을 처리했습니다.
               </p>
@@ -99,7 +99,7 @@ const AboutPage = () => {
               <span>루나소프트</span>
               <time>2018.4 ~ 2018.10</time>
             </div>
-            <div class="item">
+            <div class="items">
               <p>
                 루나소프트 상담톡 서비스의 상담원 채팅 화면과 어드민 툴을 작업했습니다. Socket.io를 사용한 채팅 시스템 구현 등 프론트엔드 전체를 담당했으며, 일부 백엔드 작업에도 참여했습니다.
               </p>

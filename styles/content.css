@@ -15,3 +15,14 @@
   background-color: var(--color-gray7);
   color: var(--color-gray3);
 }
+
+@media screen and (max-width: 768px) {
+  .content {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .labels span {
+    font-size: 0.85rem;
+  }
+}

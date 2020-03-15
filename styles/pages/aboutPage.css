@@ -61,21 +61,44 @@
   color: var(--color-gray3);
 }
 
-.about-page .project section .item {
+.about-page .project section .items {
   flex: 1;
   padding-left: 1.5rem;
   border-left: 5px solid var(--color-gray6);
 }
 
-.about-page .project section .item ul {
+.about-page .project section .items ul {
   margin-top: 1rem;
   padding-left: 1.5rem;
   list-style: disc;
 }
 
-.about-page .project section .item ul li {
+.about-page .project section .items ul li {
   font-size: 0.85rem;
 }
 
-.about-page .project section .item ul li:before {
+@media screen and (max-width: 768px) {
+  .about-page .skill dl dd {
+    font-size: 0.95rem;
+  }
+
+  .about-page .project section {
+    flex-wrap: wrap;
+  }
+
+  .about-page .project section .title {
+    width: 100%;
+  }
+
+  .about-page .project section .items {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    padding-left: 0;
+    border-top: 1px solid var(--color-border);
+    border-left: none;
+  }
+
+  .about-page .project section .items ul li {
+    font-size: 0.95rem;
+  }
 }
