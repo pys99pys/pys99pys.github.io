@@ -5,6 +5,7 @@
 @import "./variables.css";
 @import "./layout.css";
 @import "./content.css";
+@import "./pages/aboutPage.css";
 @import "./pages/postPage.css";
 @import "./pages/postDetailPage.css";
 
@@ -14,7 +15,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 body {

@@ -1,0 +1,81 @@
+.about-page h1 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.about-page h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.about-page h3 {
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.about-page .profile small {
+  color: var(--color-gray3);
+}
+
+.about-page .profile p {
+  margin-top: 1rem;
+}
+
+.about-page .skill,
+.about-page .project {
+  margin-top: 3rem;
+}
+
+.about-page .skill dl {
+  margin-top: 1.5rem;
+  padding-left: 1rem;
+  border-left: 5px solid var(--color-gray6);
+}
+
+.about-page .skill dl dt {
+  font-weight: 600;
+}
+
+.about-page .skill dl dd {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.about-page .project section {
+  margin-top: 2.5rem;
+  display: flex;
+}
+
+.about-page .project section .title {
+  width: 12.5rem;
+}
+
+.about-page .project section .title span {
+  margin-top: 0.25rem;
+  display: block;
+  font-size: 0.85rem;
+}
+
+.about-page .project section .title time {
+  font-size: 0.75rem;
+  color: var(--color-gray3);
+}
+
+.about-page .project section .item {
+  flex: 1;
+  padding-left: 1.5rem;
+  border-left: 5px solid var(--color-gray6);
+}
+
+.about-page .project section .item ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+
+.about-page .project section .item ul li {
+  font-size: 0.85rem;
+}
+
+.about-page .project section .item ul li:before {
+}
