@@ -7,6 +7,7 @@ import { getPost } from "./js/api.js";
 (async () => {
   if (!window.location.href.split("/").pop()) {
     window.location.href = "/#/post";
+    window.location.reload();
     return;
   }
 
