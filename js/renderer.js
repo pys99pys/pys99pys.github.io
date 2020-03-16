@@ -1,6 +1,7 @@
 export default class Renderer {
-  constructor() {
+  constructor(store) {
     this.renderLayout();
+    this.store = store;
   }
 
   renderLayout() {
@@ -25,7 +26,7 @@ export default class Renderer {
 
   async renderPage(component) {
     const $main = document.getElementsByClassName("main")[0];
-    const render = await component(this.renderLoading);
+    const render = await component(this.store);
     $main.innerHTML = render;
   }
 

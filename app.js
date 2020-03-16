@@ -11,7 +11,11 @@ import { getPost } from "./js/api.js";
     return;
   }
 
-  const renderer = new Renderer();
+  const store = {
+    posts: [],
+    tags: []
+  };
+  const renderer = new Renderer(store);
   const router = new Router(renderer);
 
   try {
@@ -28,8 +32,8 @@ import { getPost } from "./js/api.js";
       return obj;
     }, {});
 
-    window.postItems = postItems;
-    window.tags = tags;
+    store.posts = postItems;
+    store.tags = tags;
   } catch (e) {
     throw Error("Fail to load post list");
   }

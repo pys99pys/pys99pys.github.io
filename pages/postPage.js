@@ -1,14 +1,12 @@
 import { getPost } from "../js/api.js";
 import { map, timeFormat } from "../js/utils.js";
 
-const postPage = async () => {
-  const { postItems, tags } = window;
+const postPage = async store => {
+  const { posts, tags } = store;
   const [, currentTag] = window.location.href.split("post#");
   const items = !!currentTag
-    ? postItems.filter(
-        ({ tags }) => tags.toLowerCase().indexOf(currentTag) !== -1
-      )
-    : postItems;
+    ? posts.filter(({ tags }) => tags.toLowerCase().indexOf(currentTag) !== -1)
+    : posts;
 
   const path = "/#/post";
   const detailPath = "/#/post-detail";
@@ -46,7 +44,7 @@ const postPage = async () => {
                 class="${!!currentTag ? "" : "active"}"
               >
                 All
-                <span>${postItems.length}</span>
+                <span>${posts.length}</span>
               </a>
             </li>
             ${map(

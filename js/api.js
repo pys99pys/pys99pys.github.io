@@ -15,10 +15,13 @@ const API_HOST = (() => {
 })();
 
 const apiCreator = api =>
-  new Promise(resolve => {
+  new Promise((resolve, reject) => {
     const httpRequest = new XMLHttpRequest();
     httpRequest.addEventListener("load", function() {
       resolve(this.responseText);
+    });
+    httpRequest.addEventListener("error", function(e) {
+      reject(e);
     });
     httpRequest.open("GET", API_HOST + api, true);
     httpRequest.send();
@@ -54,6 +57,6 @@ export const getPost = async () => {
     return JSON.parse(response);
   } catch (e) {
     console.log(e);
-    return [];
+    return MOCK_DATA;
   }
 };

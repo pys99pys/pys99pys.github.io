@@ -1,9 +1,9 @@
 import { map, timeFormat } from "../js/utils.js";
 
-const postDetailPage = async () => {
-  const { postItems } = window;
+const postDetailPage = async store => {
+  const { posts } = store;
   const [, id] = window.location.href.split("post-detail#");
-  const item = postItems.find(({ id: targetId }) => targetId === Number(id));
+  const item = posts.find(({ id: targetId }) => targetId === Number(id));
 
   if (!item) {
     return "";
