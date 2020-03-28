@@ -29,7 +29,11 @@ const postPage = async store => {
                     )}
                   </div>
                   <h1>${subject}</h1>
-                  <p>${content}</p>
+                  <p>${String(content)
+                    .replace(/&/g, "&amp;")
+                    .replace(/</g, "&lt;")
+                    .replace(/>/g, "&gt;")
+                    .replace(/"/g, "&quot;")}</p>
                   <time>${timeFormat(createdAt)}</time>
                 </a>
               </article>
